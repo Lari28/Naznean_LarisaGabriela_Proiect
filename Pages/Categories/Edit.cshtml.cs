@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Naznean_Larisa_Lab8.Data;
-using Naznean_Larisa_Lab8.Models;
+using Naznean_LarisaGabriela_Proiect.Data;
+using Naznean_LarisaGabriela_Proiect.Models;
 
-namespace Naznean_Larisa_Lab8.Pages.Categories
+namespace Naznean_LarisaGabriela_Proiect.Pages.Categories
 {
     public class EditModel : PageModel
     {
-        private readonly Naznean_Larisa_Lab8.Data.Naznean_Larisa_Lab8Context _context;
+        private readonly Naznean_LarisaGabriela_Proiect.Data.Naznean_LarisaGabriela_ProiectContext _context;
 
-        public EditModel(Naznean_Larisa_Lab8.Data.Naznean_Larisa_Lab8Context context)
+        public EditModel(Naznean_LarisaGabriela_Proiect.Data.Naznean_LarisaGabriela_ProiectContext context)
         {
             _context = context;
         }

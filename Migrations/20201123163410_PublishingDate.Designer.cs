@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Naznean_Larisa_Lab8.Data;
+using Naznean_LarisaGabriela_Proiect.Data;
 
-namespace Naznean_Larisa_Lab8.Migrations
+namespace Naznean_LarisaGabriela_Proiect.Migrations
 {
-    [DbContext(typeof(Naznean_Larisa_Lab8Context))]
+    [DbContext(typeof(Naznean_LarisaGabriela_ProiectContext))]
     [Migration("20201123163410_PublishingDate")]
     partial class PublishingDate
     {
@@ -21,14 +21,14 @@ namespace Naznean_Larisa_Lab8.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Naznean_Larisa_Lab8.Models.Book", b =>
+            modelBuilder.Entity("Naznean_LarisaGabriela_Proiect.Models.Album", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Author")
+                    b.Property<string>("Singer")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
@@ -42,7 +42,7 @@ namespace Naznean_Larisa_Lab8.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Book");
+                    b.ToTable("Album");
                 });
 #pragma warning restore 612, 618
         }

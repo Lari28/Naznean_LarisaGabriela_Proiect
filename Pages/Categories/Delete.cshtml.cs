@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Naznean_Larisa_Lab8.Data;
-using Naznean_Larisa_Lab8.Models;
+using Naznean_LarisaGabriela_Proiect.Data;
+using Naznean_LarisaGabriela_Proiect.Models;
 
-namespace Naznean_Larisa_Lab8.Pages.Categories
+namespace Naznean_LarisaGabriela_Proiect.Pages.Categories
 {
     public class DeleteModel : PageModel
     {
-        private readonly Naznean_Larisa_Lab8.Data.Naznean_Larisa_Lab8Context _context;
+        private readonly Naznean_LarisaGabriela_Proiect.Data.Naznean_LarisaGabriela_ProiectContext _context;
 
-        public DeleteModel(Naznean_Larisa_Lab8.Data.Naznean_Larisa_Lab8Context context)
+        public DeleteModel(Naznean_LarisaGabriela_Proiect.Data.Naznean_LarisaGabriela_ProiectContext context)
         {
             _context = context;
         }
