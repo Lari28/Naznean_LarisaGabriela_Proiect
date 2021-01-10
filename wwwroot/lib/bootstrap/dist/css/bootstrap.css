@@ -51,6 +51,11 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+body {
+    background-image: url("a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 body {
   margin: 0;

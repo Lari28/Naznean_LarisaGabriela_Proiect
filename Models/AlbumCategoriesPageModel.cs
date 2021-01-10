@@ -14,7 +14,7 @@ namespace Naznean_LarisaGabriela_Proiect.Models
         {
             var allCategories = context.Category;
             var AlbumCategories = new HashSet<int>(
-            Album.AlbumCategories.Select(c => c.AlbumID));
+            Album.AlbumCategories.Select(c => c.AlbumID)); //selecteaza albumul dat cu ID=AlbumID
             AssignedCategoryDataList = new List<AssignedCategoryData>();
             foreach (var cat in allCategories)
             {
